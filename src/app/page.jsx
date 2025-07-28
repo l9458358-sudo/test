@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 
 function MainComponent() {
   const { useState } = React;
@@ -153,7 +154,7 @@ function MainComponent() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <div className="text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <Link href="/health-insurance" className="block text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-heartbeat text-red-600 text-xl"></i>
               </div>
@@ -164,9 +165,9 @@ function MainComponent() {
                 Comprehensive health coverage with plans starting as low as
                 $0/month.
               </p>
-            </div>
+            </Link>
 
-            <div className="text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <Link href="/auto-insurance" className="block text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-car text-yellow-600 text-xl"></i>
               </div>
@@ -176,9 +177,9 @@ function MainComponent() {
               <p className="text-sm text-gray-600 px-2">
                 Protect your vehicle with comprehensive auto insurance coverage.
               </p>
-            </div>
+            </Link>
 
-            <div className="text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <Link href="/home-insurance" className="block text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-home text-red-600 text-xl"></i>
               </div>
@@ -188,9 +189,9 @@ function MainComponent() {
               <p className="text-sm text-gray-600 px-2">
                 Protect your home and belongings with reliable home insurance.
               </p>
-            </div>
+            </Link>
 
-            <div className="text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+            <Link href="/life-insurance" className="block text-center bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className="fas fa-umbrella text-yellow-600 text-xl"></i>
               </div>
@@ -201,7 +202,7 @@ function MainComponent() {
                 Secure your family's financial future with affordable life
                 insurance.
               </p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -313,7 +314,7 @@ function MainComponent() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/health-insurance"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Health Insurance
@@ -321,7 +322,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/auto-insurance"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Auto Insurance
@@ -329,7 +330,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/home-insurance"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Home Insurance
@@ -337,7 +338,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/life-insurance"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Life Insurance
@@ -351,7 +352,7 @@ function MainComponent() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/quote-calculator"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Quote Calculator
@@ -359,7 +360,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/coverage-guide"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Coverage Guide
@@ -367,7 +368,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/plan-comparison"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Plan Comparison
@@ -375,7 +376,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/faq"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     FAQ
@@ -389,7 +390,7 @@ function MainComponent() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/privacy-policy"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Privacy Policy
@@ -397,7 +398,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/terms-of-service"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Terms of Service
@@ -405,7 +406,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/licensing"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Licensing
@@ -413,7 +414,7 @@ function MainComponent() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/disclaimers"
                     className="hover:text-yellow-400 transition-colors"
                   >
                     Disclaimers
